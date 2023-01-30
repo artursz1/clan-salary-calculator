@@ -1,0 +1,1 @@
+# clan-salary-calculator
