@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #076448, #da49b8);
+}
+
+.suicide {
+    position: relative;
+    font-size: 3vw;
+    color: #252839;
+    -webkit-text-stroke: 0.1vw #383d52;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ss {
+    position: relative;
+    font-size: 3vw;
+    color: #252839;
+    -webkit-text-stroke: 0.1vw #383d52;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+
+.suicide::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #7C007D;
+    -webkit-text-stroke: 0vw #383d52;
+    border-right: 2px solid #490404;
+    overflow: hidden;
+    animation: animate-suicide 6s linear infinite;
+}
+
+.ss::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #7C007D;
+    -webkit-text-stroke: 0vw #383d52;
+    border-right: 2px solid #490404;
+    overflow: hidden;
+    animation: animate-ss 6s linear infinite;
+}
+
+@keyframes animate-suicide {
+    0%,10%,100% {
+        width: 0;
+    }
+    70%, 90% {
+        width: 100%;
+    }
+}
+
+@keyframes animate-ss {
+    0%,10%,100% {
+        width: 0;
+    }
+    70%, 90% {
+        width: 62%;
+    }
+}
