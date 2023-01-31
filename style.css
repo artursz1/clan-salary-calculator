@@ -3,7 +3,32 @@
 body {
     display: flex;
     min-height: 100vh;
-    background: linear-gradient(45deg, #076448, #da49b8);
+    background: linear-gradient(45deg, #85869d, #568d90);
+}
+
+.change-color-div {
+    display: flex;
+    position: absolute;
+    min-height: auto;
+    top: 10px;
+    right: 10px;
+}
+
+.change-color-button {
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 33px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px black;
+    box-shadow: 1px 1px 2px black;
+    transition: 0.3s ease;
+}
+
+#generate:hover {
+    transform: scale(1.05);
+    background-color: #7C007D;
 }
 
 .suicide {
