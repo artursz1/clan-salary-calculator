@@ -1,1 +1,1 @@
-# clan-salary-calculator
+# SS
